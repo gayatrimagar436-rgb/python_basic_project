@@ -1,22 +1,17 @@
-"""def analyze_string (s):
-    name=input("enter a string :")
+def analyze_string (s):
+    
     length=len(s)
-    print("length:",length)
-
- analyze_string(s)"""
-class  car:
-    def __init__(self , brand,model,):
-        self.brand=brand
-        self.model=model
-
-    def  display_info(self):
-        print("car brand:",self.brand)
-        print("car model:",self.model)
-
-car_demo1=car("mahindra", "mahindra thar")
-car_demo2=car("maruti suzuki","nexa")
-car_demo1.display_info()
-car_demo2.display_info()
-
+    print("length of string :",length)
+    print("string in reverse order : ",s[::-1])
+    vowels="aeiou"
+    count=0
+    for ch in s.lower():
+        if ch in vowels:
+            count +=1
+        print("vowels:",count)
+    for i in range(len(s)):
+     print("character:",(s[i]),"posotive index :",([i]),"negative index :",(i-len(s)))
+name =input ("enter a string :")
+analyze_string(name)
 
    
